@@ -14,7 +14,8 @@ router.get('/somar/:numero1/:numero2', function(req, res, next) {
   var total = numero1 + numero2
 
     // captar var do tipo query (Ex: ?numero1)
-    // var numero1 = req.query.numero1
+    // na rota: ?numero1=10&numero2
+     var numero1 = req.query.numero1
 
     res.status(200).json({
       "total":total,
