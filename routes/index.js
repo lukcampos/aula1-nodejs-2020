@@ -1,6 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
+
+// Github https://github.com/lukcampos
+// https://github.com/lukcampos/aula1-nodejs-2020
+
 /* GET rota de somar. */
 router.get('/somar/:numero1/:numero2', function(req, res, next) {
   // req - request (obtem dados)
